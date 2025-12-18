@@ -19,10 +19,10 @@ A coleção executa a seguinte sequência lógica automatizada:
     * **Cadastro:** Inserção de produto validando Status 201.
     * **Consulta:** Validação dos dados inseridos (GET).
     * **Atualização:** Edição de preço/descrição (PUT).
-4.  **🛒 Fluxo de Compra:**
+4.  **Fluxo de Compra:**
     * Simulação de adição de itens ao carrinho.
     * Conclusão da compra (limpeza do carrinho).
-5.  ** Data Teardown:** Exclusão dos dados gerados (usuários/produtos) para não sujar a base.
+5.  **Data Teardown:** Exclusão dos dados gerados (usuários/produtos) para não sujar a base.
 
 ## Como executar este projeto
 Para rodar os testes na sua máquina:
