@@ -34,10 +34,10 @@ Script utilizado para capturar o Token JWT, remover o prefixo "Bearer" (para evi
 ```javascript
 var jsonData = pm.response.json();
 
-// Validação de Login
+// validacao de login
 pm.expect(jsonData.message).to.eql("Login realizado com sucesso");
 
-// Tratamento e Armazenamento do Token
+// tratamento e armazenamento do token
 if (jsonData.authorization) {
     // A API retorna "Bearer <token>", o split pega apenas o código
     var tokenLimpo = jsonData.authorization.split(' ')[1];
