@@ -43,9 +43,9 @@ if (jsonData.authorization) {
     var tokenLimpo = jsonData.authorization.split(' ')[1];
     pm.environment.set("token", tokenLimpo);
 }
+```
 ## Como executar este projeto
 Para rodar os testes na sua máquina:
-
 1.  Baixe os arquivos `.json` deste repositório.
 2.  Abra o Postman e clique em **Import**.
 3.  Selecione os arquivos `Collection` e `Environment`.
