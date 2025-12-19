@@ -24,6 +24,25 @@ A coleção executa a seguinte sequência lógica automatizada:
     * Conclusão da compra (limpeza do carrinho).
 5.  **Data Teardown:** Exclusão dos dados gerados (usuários/produtos) para não sujar a base.
 
+## Exemplos de Scripts
+
+Abaixo, alguns trechos da lógica desenvolvida na aba **Tests** para garantir robustez na automação.
+
+### 1. Autenticação Inteligente (Login)
+Script utilizado para capturar o Token JWT, remover o prefixo "Bearer" (para evitar duplicações) e armazená-lo automaticamente nas variáveis de ambiente.
+
+```javascript
+var jsonData = pm.response.json();
+
+// Validação de Login
+pm.expect(jsonData.message).to.eql("Login realizado com sucesso");
+
+// Tratamento e Armazenamento do Token
+if (jsonData.authorization) {
+    // A API retorna "Bearer <token>", o split pega apenas o código
+    var tokenLimpo = jsonData.authorization.split(' ')[1];
+    pm.environment.set("token", tokenLimpo);
+}
 ## Como executar este projeto
 Para rodar os testes na sua máquina:
 
