@@ -13,9 +13,9 @@ O objetivo foi validar a confiabilidade dos endpoints críticos (CRUD), a segura
 ##  Cenários Cobertos (End-to-End)
 A coleção executa a seguinte sequência lógica automatizada:
 
-1.  ** Criação de Usuário:** Registro com dados dinâmicos (evitando conflitos).
-2.  ** Autenticação (Login):** Extração e tratamento de Token JWT para uso em rotas protegidas.
-3.  ** Gestão de Produtos:**
+1.  **Criação de Usuário:** Registro com dados dinâmicos (evitando conflitos).
+2.  **Autenticação (Login):** Extração e tratamento de Token JWT para uso em rotas protegidas.
+3.  **Gestão de Produtos:**
     * **Cadastro:** Inserção de produto validando Status 201.
     * **Consulta:** Validação dos dados inseridos (GET).
     * **Atualização:** Edição de preço/descrição (PUT).
