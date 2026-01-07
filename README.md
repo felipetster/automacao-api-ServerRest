@@ -4,6 +4,14 @@ Este projeto apresenta uma suíte de testes automatizados de API desenvolvida no
 
 O foco da automação é garantir a confiabilidade dos endpoints críticos, validar regras de negócio, segurança (autenticação JWT) e integridade dos dados ao longo de um fluxo End-to-End, do cadastro até a finalização da compra.
 
+Objetivos do Projeto
+
+## Validar o comportamento funcional dos principais endpoints (CRUD)
+* **Garantir o correto funcionamento da autenticação via JWT
+* **Assegurar consistência e integridade dos dados entre requisições
+* **Simular um fluxo real de uso da API, reduzindo riscos antes de produção
+* **Demonstrar boas práticas de automação e organização de testes de API
+  
 ##  Tecnologias Utilizadas
 * **Postman:** Estruturação das requisições e suites de teste.
 * **JavaScript:** Scripts de pré-request e testes (asserções).
