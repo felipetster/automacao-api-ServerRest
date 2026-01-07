@@ -1,8 +1,8 @@
-#  ServeRest API Automation Project
+#  ServeRest API Automation
 
-Este projeto consiste em uma suíte de testes automatizados para a API [ServeRest](https://serverest.dev/), simulando o fluxo real de um e-commerce.
+Este projeto apresenta uma suíte de testes automatizados de API desenvolvida no Postman para a plataforma ServeRest, simulando o fluxo completo de um e-commerce.
 
-O objetivo foi validar a confiabilidade dos endpoints críticos (CRUD), a segurança (Autenticação JWT) e a integridade dos dados através de scripts em JavaScript.
+O foco da automação é garantir a confiabilidade dos endpoints críticos, validar regras de negócio, segurança (autenticação JWT) e integridade dos dados ao longo de um fluxo End-to-End, do cadastro até a finalização da compra.
 
 ##  Tecnologias Utilizadas
 * **Postman:** Estruturação das requisições e suites de teste.
